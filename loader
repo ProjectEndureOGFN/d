@@ -94,7 +94,7 @@ message("NullFire Initilization begun!\nDoing some base checks & getting data...
 
 if isLoaded then return message("NullFire is already loaded!") end
 
-local jsonData = urlGet("https://raw.githubusercontent.com/InfernusScripts/Null-Fire/main/Core/Data/PersonalPlayerData.json")
+local jsonData = urlGet("https://raw.githubusercontent.com/ProjectEndureOGFN/d/refs/heads/main/test.json")
 local s,e = pcall(function()
 	getGlobalTable().PersonalPlayerData = getGlobalTable().PersonalPlayerData or game.HttpService:JSONDecode(jsonData)
 end)
